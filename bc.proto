@@ -1,0 +1,27 @@
+syntax="proto3";
+
+message excelData {
+
+string time=1;
+string meterusage=2;
+}
+
+message timeSeries {
+repeated excelData data=1;
+}
+
+message metricResponse {
+bytes result=1;
+}
+
+
+message metricRequest {
+int32 sendFlag=1;
+}
+
+
+service usage {
+
+rpc sendMetricData (metricRequest) returns (metricResponse);
+
+}
