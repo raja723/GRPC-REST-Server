@@ -1,4 +1,4 @@
-# GRPC-REST-Server
+# GRPC-REST microservice
 
 The bc.proto defines the message types and their structure for my GRCP server and clients.
 
